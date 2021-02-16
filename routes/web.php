@@ -31,9 +31,9 @@ Route::group(["middleware"=>'finalexam:Admin'],function(){
 });
 
 Route::get('/', function () {
-    return view('home');
+    return redirect('/home');
 });
-Auth::routes();
+
 
 Route::get('/home', 'ViewController@home')->name('home');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
@@ -42,3 +42,5 @@ Route::get('/category/{name}','CategoryController@viewCategory');
 Route::get('/about',function(){
     return view('about');
 });
+
+Auth::routes();

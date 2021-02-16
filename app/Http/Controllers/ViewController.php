@@ -9,10 +9,9 @@ class ViewController extends Controller
 {
     public function home()
     {
-        $categories = Category::all();
+        
         $articles = Article::all();
         return view('home',[
-            "categories"=>$categories,
             "articles" =>$articles,
         ]);
     }
