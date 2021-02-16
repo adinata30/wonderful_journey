@@ -17,7 +17,7 @@
                 {{$article->description}}
                 </p>
                 
-                <a href="article/{{$article->id}}"><button class="article-preview-btn">
+                <a href="/article/{{$article->id}}"><button class="article-preview-btn">
                 Read Full Story
                 </button></a>
             </div>
